@@ -28,7 +28,7 @@ FIELD_HEIGHT = 20
 FPS = 120
 
 # Musik laden und abspielen
-#pygame.mixer.music.load('Tetris.mp3')  # Lade die Musikdatei
+pygame.mixer.music.load('Tetris.mp3')  # Lade die Musikdatei
 # pygame.mixer.music.play(-1)  # Spiele die Musik in Endlosschleife
 
 # Definiere die Tetris-Formen und ihre Rotationen
@@ -290,7 +290,7 @@ def main():
     print (grid)
 
     # Setze die Hintergrundmusik bei Spielbeginn fort
-    #pygame.mixer.music.play(-1)  # Spiele die Musik in Endlosschleife
+    pygame.mixer.music.play(-1)  # Spiele die Musik in Endlosschleife
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     pygame.display.set_caption('Tetris')  # Setze den Fenstertitel
 
